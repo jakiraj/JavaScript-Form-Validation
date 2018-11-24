@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>JavaScript Form Validation</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="myform.js"></script>
+    </head>
+    <body>
+        <section class="content">
+            <header class="header">
+                <h2>JavaScript Form Validation</h2>
+            </header>
+        </section>
+        <section class="maincontent">
+            <form name="myform" method="post" onsubmit="return validateForm();" >
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" placeholder="Please Enter Your Name"/></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="email" placeholder="Please Enter Your Email"/></td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone</td>
+                        <td>
+                            <input type="text" name="phone" placeholder="Please Enter Your Contact No"/><br/>
+                            <input type="checkbox" name="notCall" onclick="enableDisable(this);"/> 
+                            Please don't call me.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>What can we help you with?</td>
+                        <td>
+                            <select name="subject">
+                                <option>Select One</option>
+                                <option>Customer Service</option>
+                                <option>Question</option>
+                                <option>Comment</option>
+                                <option>Others</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Comment</td>
+                        <td><input type="text" name="comment" placeholder="Please Enter Your Suggestion"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="submit" value="Submit"/>
+                            <input type="reset" name="reset" value="Reset"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="show"></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <footer class="footer">
+            <h2>Form Validation with Jakir Hossain</h2>
+        </footer>
+    </body>
+</html>
